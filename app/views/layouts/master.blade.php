@@ -11,8 +11,8 @@
 <nav>
     <ul>
         <div id="navlinks">
-            <li><a href="/">Home</a></li>
-            <li><a href="quizzes">Quizzes</a></li>
+            <li>{{ HTML::link('/', 'HOME',array('id' => 'linkid'))}}</li>
+            <li>{{ HTML::link('quizzes', 'QUIZZES',array('id' => 'linkid'))}}</li>
              <li><div id="search">
                  <input id="searchBar" type="text" placeholder="Search Quizzes">
                  <div id="tekst"></div></div>

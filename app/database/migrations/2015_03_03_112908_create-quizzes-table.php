@@ -16,6 +16,7 @@ class CreateQuizzesTable extends Migration {
         {
 		$table->increments('id');
         $table->string('quizname');
+        $table->string('quiztype');
         $table->date('created_at');
         });
 	}

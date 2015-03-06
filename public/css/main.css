@@ -34,7 +34,7 @@ nav {
     margin: 0px;
 }
 
-nav a:hover {
+#linkid:hover {
     color: black;
 }
 
