@@ -15,7 +15,7 @@ class BaseController extends Controller {
 		}
 	}
 
-    protected $layout = 'layout.master';
+    protected $layout = 'layouts.master';
 
     public function showIndex()
     {

@@ -9,7 +9,6 @@
 @section('content')
 @parent
 
-<h1>Welcome!</h1>
 
 <p>
 Quiz List:

@@ -16,7 +16,31 @@ Route::get('', function()
 	return View::make('index');
 });
 
-Route::controller('users', 'UsersController');
+Route::controller('users', 'UserController');
 
-Route::controller('quizzes', 'QuizzesController');
+Route::controller('quizzes', 'QuizController');
 
+
+
+Route::get('quizzes', function()
+{
+    return View::make('quizzes/quizzes');
+});
+
+
+
+
+
+/*
+Route::get('quizzes/{id?}', function($quizid = 1)
+{
+    if (is_numeric($quizid))
+    {
+        $tag = Tag::find($quizid);
+        return $tag->quizzes;
+    }
+    else
+    {
+        return "Quiz not found";
+    }
+}*/
