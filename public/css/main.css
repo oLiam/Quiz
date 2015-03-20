@@ -73,9 +73,20 @@ nav li {
     box-shadow:         0px 4px 11px 0px rgba(50, 50, 50, 0.35);
     text-align: center;
 }
-
+#quizlinks {
+    list-style-type: none;
+}
 .createquiz {
     text-align: center;
-    display: inline-block;
+    margin: 0 auto;
 }
 
+.quizcreate {
+}
+
+#quizlist {
+    list-style-type: none;
+    position: relative;
+    right: 20px;
+    margin-top: 5px;
+}

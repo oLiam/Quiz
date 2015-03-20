@@ -22,10 +22,7 @@ Route::controller('quizzes', 'QuizController');
 
 
 
-Route::get('quizzes', function()
-{
-    return View::make('quizzes/quizzes');
-});
+Route::get('quizzes', 'QuizController@getQuizzes');
 
 
 

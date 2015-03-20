@@ -15,6 +15,7 @@ class CreateAnswersTable extends Migration {
 		Schema::create('answers', function($table)
         {
             $table->increments('id');
+            $table->foreign('question_id')->references('id')->on('questions');
         });
 	}
 
