@@ -28,16 +28,4 @@ Route::get('quizzes', 'QuizController@getQuizzes');
 
 
 
-/*
-Route::get('quizzes/{id?}', function($quizid = 1)
-{
-    if (is_numeric($quizid))
-    {
-        $tag = Tag::find($quizid);
-        return $tag->quizzes;
-    }
-    else
-    {
-        return "Quiz not found";
-    }
-}*/
+

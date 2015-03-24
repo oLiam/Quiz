@@ -73,6 +73,7 @@ nav li {
     box-shadow:         0px 4px 11px 0px rgba(50, 50, 50, 0.35);
     text-align: center;
 }
+
 #quizlinks {
     list-style-type: none;
 }
@@ -89,4 +90,11 @@ nav li {
     position: relative;
     right: 20px;
     margin-top: 5px;
+    display: inline-block;
+}
+
+#quizlistedit {
+    list-style-type: none;
+    position: relative;
+    display: inline;
 }

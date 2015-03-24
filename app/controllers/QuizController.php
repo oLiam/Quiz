@@ -23,9 +23,6 @@ class QuizController extends BaseController{
         else {
             return Redirect::to('/')->with('message', 'There has been a error occurred');
         }
-
-
-
     }
 
 
@@ -33,5 +30,12 @@ class QuizController extends BaseController{
         $quizzes = DB::table('quizzes')->get(array('id', 'quizname'));
 
         return View::make('quizzes.quizzes')->with('quizzes', $quizzes);
+    }
+
+    public function postDelete() {
+        $quiz = Quiz::get($id);
+        $quiz->delete();
+
+        return Redirect::to('quizzes');
     }
 }
