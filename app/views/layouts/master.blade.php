@@ -29,6 +29,7 @@
     </div>
 </div>
 
+{{ HTML::link('login', 'Admin Login', array('id' => 'loginbutton')) }}
 
 </body>
 </html>

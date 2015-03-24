@@ -5,7 +5,7 @@
 a {
     text-decoration: none;
     color: rgb(116, 121, 99);
-    text-transform: uppercase;
+
 }
 
 body {
@@ -31,6 +31,7 @@ nav {
     position: relative;
     top: 20px;
     margin: 0px;
+    text-transform: uppercase;
 }
 
 #linkid:hover {
@@ -91,10 +92,33 @@ nav li {
     right: 20px;
     margin-top: 5px;
     display: inline-block;
+
 }
 
 #quizlistedit {
     list-style-type: none;
     position: relative;
-    display: inline;
+    display: inline-block;
+
+}
+
+#quizdelete {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.quizlist {
+    position: relative;
+    top: 10px;
+
+}
+
+li a:hover{
+    color: black;
+}
+
+#loginbutton {
+    position: relative;
+    right: 0;
+    bottom: 0;
 }

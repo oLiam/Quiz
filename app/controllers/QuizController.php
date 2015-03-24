@@ -17,7 +17,7 @@ class QuizController extends BaseController{
             $quiz = new Quiz;
             $quiz->quizname = Input::get('quizname');
             $quiz->save();
-            return Redirect::to('quizzes')->with('message', 'Your quiz has been created!');
+            return Redirect::to('quizzes')->with('message', '$quizname has been created!');
         }
 
         else {
@@ -32,10 +32,14 @@ class QuizController extends BaseController{
         return View::make('quizzes.quizzes')->with('quizzes', $quizzes);
     }
 
-    public function postDelete() {
-        $quiz = Quiz::get($id);
+    public function postDelete($id) {
+        $quiz = Quiz::find($id);
         $quiz->delete();
 
         return Redirect::to('quizzes');
+    }
+
+    public function editQuiz() {
+
     }
 }
