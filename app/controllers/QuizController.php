@@ -17,11 +17,11 @@ class QuizController extends BaseController{
             $quiz = new Quiz;
             $quiz->quizname = Input::get('quizname');
             $quiz->save();
-            return Redirect::to('quizzes')->with('message', '$quizname has been created!');
+            return Redirect::to('quizzes')->with('message', 'Your quiz has been created!');
         }
 
         else {
-            return Redirect::to('/')->with('message', 'There has been a error occurred');
+            return Redirect::to('quizzes')->with('message', 'There has been a error occurred');
         }
     }
 
@@ -39,7 +39,7 @@ class QuizController extends BaseController{
         return Redirect::to('quizzes');
     }
 
-    public function editQuiz() {
-
+    public function getEdit() {
+        return View::make('quizzes/edit');
     }
 }

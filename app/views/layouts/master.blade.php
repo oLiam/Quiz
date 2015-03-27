@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quiz</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+
 </head>
 <body>
 @section ('navbar')
@@ -14,9 +17,13 @@
             <li>{{ HTML::link('/', 'HOME', array('id' => 'linkid'))}}</li>
             <li>{{ HTML::link('quizzes', 'QUIZZES', array('id' => 'linkid'))}}</li>
 
-             <li><div id="search">
-                 <input id="searchBar" type="text" placeholder="Search Quizzes">
-                 <div id="tekst"></div></div>
+             <li>
+                 <div id="search">
+                     <input id="searchBar" type="text" placeholder="Search Quizzes">
+                     <div id="tekst"></div
+                     ></div>
+
+                 </div>
              </li>
         </div>
     </ul>

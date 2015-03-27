@@ -5,6 +5,9 @@
 a {
     text-decoration: none;
     color: rgb(116, 121, 99);
+}
+
+p {
 
 }
 
@@ -83,7 +86,7 @@ nav li {
     margin: 0 auto;
 }
 
-.quizcreate {
+#quiz {
 }
 
 #quizlist {
@@ -121,4 +124,14 @@ li a:hover{
     position: relative;
     right: 0;
     bottom: 0;
+}
+
+#questionadd {
+    position: relative;
+    top: 10px;
+}
+
+#quizsubmit {
+    position: relative;
+    top: 10px;
 }
